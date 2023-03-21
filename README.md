@@ -4,13 +4,13 @@
 # Tutorial
 To understand correctly, first pay attention to the photo below :
 
-![g.Resources](https://s24.picofile.com/file/8452013176/bamls.png)
+![g.Resources](Images/bamls.png)
 
 In the Resources, there are resource called `*.g.resources`, where there are `*.baml` files. 
 
 From now on, we will call this resource by the name `g.resources`, and we will call the files inside it as its `elements`.
 
-> Now first install the package from [Nuget](https://www.nuget.org/packages/dnlib.BAML/1.0.0).
+> Now first install the package from [Nuget](https://www.nuget.org/packages/dnlib.BAML).
 
 Then you can use the library, below I changed the title of the Window and the text of a TextBlock:
 ```csharp
@@ -29,7 +29,7 @@ using (ModuleDefMD module = ModuleDefMD.Load("WpfApp1.exe"))
             {
                 if (record.Type == BamlRecordType.PropertyWithConverter)
                 {
-                    PropertyWithConverterRecord pwcr = recordPropertyWithConverterRecord;
+                    PropertyWithConverterRecord pwcr = record as PropertyWithConverterRecord;
                     if (pwcr.Value.ToLower().Contains("window title"))
                     {
                         pwcr.Value = "dnlib.BAML";
@@ -47,5 +47,6 @@ using (ModuleDefMD module = ModuleDefMD.Load("WpfApp1.exe"))
     }
 }
 ```
-![Editor](https://s25.picofile.com/file/8452031242/baml_editor.gif)
+![Editor](Images/baml_editor.gif)
+
 
