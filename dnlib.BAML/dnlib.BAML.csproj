@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;net35;net45</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;net35;net45;net6.0</TargetFrameworks>
     <RootNamespace>dnlib.DotNet.Resources</RootNamespace>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Soheil MV</Authors>
@@ -12,11 +12,11 @@
     <RepositoryUrl>https://github.com/SoheilMV/dnlib.BAML</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
     <PackageTags>xaml, baml, dnlib, resources, resource, g.resources</PackageTags>
-    <Version>1.1</Version>
+    <Version>1.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="dnlib" Version="3.6.0" />
+    <PackageReference Include="dnlib" Version="4.0.0" />
   </ItemGroup>
 
 </Project>

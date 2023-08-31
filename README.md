@@ -1,5 +1,5 @@
-# dnlib.BAML
-(XAML/BAML) Editor with dnlib in .NET
+# dnlib.BAML [![Nuget](https://img.shields.io/nuget/v/dnlib.BAML)](https://www.nuget.org/packages/dnlib.BAML/)
+BAML Editor with dnlib in .NET
 
 # Tutorial
 To understand correctly, first pay attention to the photo below :
@@ -49,4 +49,5 @@ using (ModuleDefMD module = ModuleDefMD.Load("WpfApp1.exe"))
 ```
 ![Editor](Images/baml_editor.gif)
 
-
+# List of other open source libraries used
+- [dnlib](https://github.com/0xd4d/dnlib) (Reads and writes .NET assemblies and modules)
